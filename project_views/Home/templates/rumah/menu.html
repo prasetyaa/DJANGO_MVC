@@ -1,0 +1,80 @@
+{% load static %}
+
+<html>
+    <head>
+        {% block head %}
+        <!-- <title>title</title> -->
+        {% endblock %}
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="{% static 'css/bootstrap.min.css'%}" type="text/css">
+        <link rel="stylesheet" href="{% static 'css/home.css' %}" type="text/css">
+        <link href="https://font.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+        <script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+        <script src="{% static 'js/bootstrap.min.js'}"></script>
+        <title>Home</title>
+    </head>
+
+<body>
+
+    <header class="box">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 col-12" id="atas">
+                    <h4>Alpha Tech Academy</h4>
+                </div>
+                <div class="col-md-6 col-12">
+                    <nav>
+                        <ul id="nav">
+                            <li><a href="{% url 'satu' %}">Home</a></li>
+                            <li><a href="{% url 'dua' %}">Blog</a></li>
+                            <li><a href="{% url 'tiga' %}">Mentor</a></li>
+                            <li><a href="{% url 'empat' %}">Mentee</a></li>
+                            <li><a href="{% url 'lima' %}">Author</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <!-- box biru -->
+            <div class="kotakBiru">
+                <div class="col-12">
+                    <div class="alphatech">
+                        <a class="logo1" href="#">
+                        <img src="{% static 'img/alpha-logo.png'}" alt="">
+                        </a>
+                        <h1>Alpha Tech Academy</h1>
+                        <p>Alpha Tech Academy is a tech talent incubator that gives everyone
+                            (even non IT background) a chance to be a professional Tech Talent
+                            within 3 months. Contact Person: Email : academy@alphatech.id Mobile
+                            phone: 0877 9609 9530
+                        </p>                            
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% block content %}
+        <!-- end box biru-->
+        {% endblock %}
+    </header>
+
+    <div class="product" style="background-color:aqua">
+        <div class="col-md-12 text-center" id="produ">
+            <span>Our Product:</span>
+            <img class="img-product" src="{% static 'img/logo-grey-alphapay.png' %}" alt="logo alphapay">
+            <img class="img-product" src="{% static 'img/logo-grey-sepulsa.png' %}" alt="logo sepulsa">
+            <img class="img-prouct" src="{% static 'img/logo-grey-alphabill.png' %}" alt="logo alphabill">
+        </div>
+    </div>
+    <div class="row-footer" style="background-color: black">
+        <div class="cold-md-12 text-center" id="kontak">
+            <span span style="color: rgb(253, 253, 253)">Contact Person: Mobile phone: 0877 9609 9530. Email: academy@alphatech.id</span>
+        </div>
+    </div>
+    {% block bawah %}
+    <!-- kakisama-->
+    {% endblock%}
+</body>
+</html>

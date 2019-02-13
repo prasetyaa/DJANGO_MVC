@@ -1,0 +1,299 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html>
+    <head>
+        {% block head %}
+        <!-- <title>title</title> -->
+        {% endblock %}
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="{% static 'css/bootstrap.min.css'%}" type="text/css">
+        <link rel="stylesheet" href="{% static 'css/home.css' %}" type="text/css">
+        <link href="https://font.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+        <script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+        <script src="{% static 'js/bootstrap.min.js'}"></script>
+        <title>Home</title>
+    </head>
+
+<body>
+
+    <header class="box">
+        <div class="container-fluid">
+            <div class="rowim">
+                <div class="col-md-6 col-12" id="atas">
+                    <h4>Alpha Tech Academy</h4>
+                </div>
+                <div class="col-md-6 col-12">
+                    <div class="nav-faq">
+                        <ul id="nav">
+                            <li><a href="{% url 'satu' %}">Home</a></li>
+                            <li><a href="{% url 'dua' %}">Blog</a></li>
+                            <li><a href="{% url 'tiga' %}">Mentor</a></li>
+                            <li><a href="{% url 'empat' %}">Mentee</a></li>
+                            <li><a href="{% url 'lima' %}">Author</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <div class="container-fluid">
+        <!-- box biru -->
+        <div class="kotakBiru">
+            <div class="col-12">
+                <div class="alphatech">
+                    <a class="logo1" href="#">
+                    <img src="{% static 'img/alpha-logo.png' %}" alt="">
+                    </a>
+                    <h1>Alpha Tech Academy</h1>
+                    <p>Alpha Tech Academy is a tech talent incubator that gives everyone
+                        (even non IT background) a chance to be a professional Tech Talent
+                        within 3 months. Contact Person: Email : academy@alphatech.id Mobile
+                        phone: 0877 9609 9530
+                    </p>                            
+                </div>
+            </div>
+        </div>
+    </div>
+    {% block content %}
+    <!-- end box biru-->
+    {% endblock %}
+
+    <div class="wrapper">
+        <div class="section-event">
+            <div class="container">
+                <div class="section-row">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6 col-12">
+                            <div class="img-event">
+                                <img src ="{% static 'img/benefit.png' %}">
+                            </div> 
+                        </div>
+                        <div class="col-md-8 col-sm-6 col-12">
+                            <h5 class="title-light">Learn awesome tech</h5>
+                            <p class="deskrip-15">
+                                You will learn about programming language, such as Python and Javascript, build back-end apps using Flask framework with microservice concept, build client-site apps using React Library, etc.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-row">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6 col-12">
+                            <div class="img-event">
+                                <img src ="{% static 'img/search-job.png' %}">
+                            </div>
+                        </div>
+                        <div class="col-md-8 col-sm-6 col-12">
+                            <h5 class="title-light">Land new job</h5>
+                            <p class="deskrip-15">
+                                If you can pass this awesome program, you will be part of our reliable tech team for especially Software Engineer position and other tech position such as Quality Engineer, System Analyst, etc.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-row">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6 col-12">
+                            <div class="img-event">
+                                <img src ="{% static 'img/get-paid.png' %}">
+                            </div>
+                        </div>
+                        <div class="col-md-8 col-sm-6 col-12">
+                            <h5 class="title-light">Get paid to Learn</h5>
+                            <p class="deskrip-15">
+                                Join for free and earn some money. Yes you read that right, no registration fee required to enter this program. To make things even better, you will receive pocket money just for participating. Cool, right?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-row">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6 col-12">
+                            <div class="img-event">
+                                <img class="img-full" src ="{% static 'img/mission.png' %}" alt="">
+                            </div>
+                        </div>
+                        <div class="col-md-8 col-sm-6 col-12">
+                            <h3 class="title-section">Who are we?</h3>
+                            <p class="deskrip-15">
+                                Alpha Tech Academy is a tech talent incubation that gives anyone any chance (not even an IT background) to learn within 3 months of being a professional Tech Talent. What is our mission? We want to improve capability Tech Talent in Indonesia.
+                            </p>
+                            <h3 class="title-section mt-5">What is our mission?</h3>
+                            <p>
+                                We want to improve capability Tech Talent in Indonesia
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="section-learning">
+            <div class="container">
+                <h3 class="title-section text-center">What will you learn?</h3>
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 col-6">
+                        <div class="column-learn">
+                            <div class="column-midle">
+                                <div class="learn-img">
+                                    <div class="learn-img-middle">
+                                        <img src="{% static 'img/learn-html.png' %}" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="learn-tittle">
+                                    <h6>Basic of Web Development</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 col-6">
+                        <div class="column-learn">
+                            <div class="column-midle">
+                                <div class="learn-img">
+                                    <div class="learn-img-middle">
+                                        <img src="{% static 'img/learn-programming.png' %}" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="learn-tittle">
+                                    <h6>Basic of Programming</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 col-6">
+                        <div class="column-learn">
+                            <div class="column-midle">
+                                <div class="learn-img">
+                                    <div class="learn-img-middle">
+                                        <img src="{% static 'img/learn-git.png' %}" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="learn-tittle">
+                                    <h6>Versioning Control with Git</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 col-6">
+                        <div class="column-learn">
+                            <div class="column-midle">
+                                <div class="learn-img">
+                                    <div class="learn-img-middle">
+                                        <img src="{% static 'img/learn-api.png' %}" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="learn-tittle">
+                                    <h6>Rest API</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 col-6">
+                        <div class="column-learn">
+                            <div class="column-midle">
+                                <div class="learn-img">
+                                    <div class="learn-img-middle">
+                                        <img src="{% static 'img/learn-react.png' %}" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="learn-tittle">
+                                    <h6>Build Client-site Apps</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 col-6">
+                        <div class="column-learn">
+                            <div class="column-midle">
+                                <div class="learn-img">
+                                    <div class="learn-img-middle">
+                                        <img src="{% static 'img/learn-tdd.png' %}" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="learn-tittle">
+                                    <h5>Test-Driven Development</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 col-6">
+                        <div class="column-learn">
+                            <div class="column-midle">
+                                <div class="learn-img">
+                                    <div class="learn-img-middle">
+                                        <img src="{% static 'img/learn-server.png' %}" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="learn-tittle">
+                                    <h6>Serverless</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 col-6">
+                        <div class="column-learn">
+                            <div class="column-midle">
+                                <div class="learn-img">
+                                    <div class="learn-img-middle">
+                                        <img src="{% static 'img/learn-scrum.png' %}" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="learn-tittle">
+                                    <h6>Scrum</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<footer>
+<!-- kakisama -->
+    <div class="product" style="background-color:aqua">
+        <div class="col-md-12 text-center" id="produ">
+            <span>Our Product:</span>
+            <img class="img-product" src="{% static 'img/logo-grey-alphapay.png' %}" alt="logo alphapay">
+            <img class="img-product" src="{% static 'img/logo-grey-sepulsa.png' %}" alt="logo sepulsa">
+            <img class="img-prouct" src="{% static 'img/logo-grey-alphabill.png' %}" alt="logo alphabill">
+        </div>
+    </div>
+    <div class="row-footer" style="background-color: black">
+        <div class="cold-md-12 text-center" id="kontak">
+            <span span style="color: rgb(253, 253, 253)">Contact Person: Mobile phone: 0877 9609 9530. Email: academy@alphatech.id</span>
+        </div>
+    </div>
+{% block bawah %}
+<!-- kakisama-->
+{% endblock%}
+</footer>
+
+</html>
