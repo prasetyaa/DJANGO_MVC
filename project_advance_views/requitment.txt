@@ -2,4 +2,8 @@ Django>=2
 django-extensions>=2
 djangrestframework==3.7.7
 django-crispy-forms==1.7.0
+Pillow==5.4.1
+pkg-resources==000
 psycopg2-binary==2.7.5
+pytz==2018.9
+six==1.12.0

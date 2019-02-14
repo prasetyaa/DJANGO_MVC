@@ -26,3 +26,170 @@
 .row-footer{
     margin: center;
 }
+
+/* .navbar{
+    padding: 0 50px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.navbar .container-fluid{
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.navbar .top-navbar{
+    width: 100%;
+    max-width: 100%;
+}
+
+.container-fluid{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+} */
+
+/* .nav-faq{
+    display: table;
+    float: right;
+    margin-top: 12px;
+} */
+
+/* .rowim{
+    flex-wrap: nowrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    justify-content: space-between;
+} */
+
+.logo1{
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+    margin: center;
+}
+
+.header-flex{
+    position: relative;
+    height: 200px;
+    padding: 0px;
+}
+
+img{
+    vertical-align: middle;
+}
+
+.kotakBiru{
+    position: ralative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 200px;
+    width: auto;
+    opacity: 0.8;
+    background-color: rgb(65, 203, 245);
+    background-size: cover;
+    z-index: 1;
+    margin: center;
+}
+
+.alphatech{
+    color: white;
+    margin: center;
+}
+
+.col-md-6{
+    margin: center;
+}
+
+.wrapper{
+    padding-top: 15px;
+    position: relative;
+    z-index: 2;
+    background-color: white;
+    padding-bottom: 110px
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    text-align: left;
+}
+
+.logo1{
+    position: center;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    z-index: 2;
+}
+
+.section-row{
+    padding : 40px 0;
+    box-sizing: border-box;
+}
+/* 
+.row{
+    flex-wrap: wrap;
+    margin-right: 200px;
+    margin-left: 200px;
+    box-sizing: border-box;
+    position: relative;
+} */
+
+/* .col-md-4{
+    flex: 0 0 33.333%;
+    max-width: 33.333%;
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    box-sizing: border-box;
+    margin-right: auto;
+    text-align: left
+}
+
+.col-md-8{
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    box-sizing: border-box;
+    margin-left: auto;
+    text-align: right;
+}
+
+.col-md-3{
+
+} */
+
+
+.learn-tittle{
+    fornt-size: 12px;
+    text-align: center;
+    margin: 0;
+    color: #7c7c7c;
+    margin-top: 10px
+}
+
+.section-row .desckrip-15{
+    color : #8d8d8d;
+    margin : 0;
+    margin-top: 1.5rem;
+    line-height: 2;
+}
+
+.section-our-product{
+    margin : center;
+}
+
+.section-our-product img{
+    margin-left: 30px;
+}
